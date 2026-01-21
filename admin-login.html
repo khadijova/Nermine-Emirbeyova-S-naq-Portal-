@@ -30,6 +30,22 @@
 
         <a href="index.html" class="back-link">← Ana səhifəyə qayıt</a>
     </div>
+<script>
+    document.querySelector('.login-form').addEventListener('submit', function(e) {
+        e.preventDefault(); 
 
+        // Giriş sahələrindən məlumatları götürürük
+        const username = document.querySelector('input[type="text"]').value;
+        const password = document.querySelector('input[type="password"]').value;
+
+        // Yoxlama məntiqi
+        if (username === "nermina_amirbayova" && password === "tarix2026") {
+            alert("Xoş gəldiniz, Nərminə müəllimə!");
+            window.location.href = "admin.html"; // Düzdürsə Admin Panelə göndər
+        } else {
+            alert("İstifadəçi adı və ya parol səhvdir!"); // Səhvdirsə xəbərdarlıq et
+        }
+    });
+</script>
 </body>
 </html>
