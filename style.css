@@ -1,14 +1,14 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    /* Sənin atdığın o binalı şəkli bura fon edirik */
-    background: url('background.jpg') no-repeat center bottom;
+
+    background: url('background.png') no-repeat center bottom;
     background-size: cover;
     height: 100vh;
     font-family: 'Playfair Display', serif;
     display: flex;
     justify-content: center;
-    background-color: #f3e9dc; /* Şəkil yüklənənə qədər görünən rəng */
+    background-color: #f3e9dc; 
 }
 
 .container {
@@ -39,7 +39,7 @@ body {
 .content h2 { font-size: 40px; color: #3e2723; margin-top: 30px; }
 .desc { font-size: 18px; color: #5d4037; margin-bottom: 40px; }
 
-/* Düymələrin Dizaynı (Şəkildəki rənglərlə eyni) */
+/* Düymələrin Dizaynı*/
 .btn-group { display: flex; gap: 20px; }
 
 .btn {
@@ -57,8 +57,8 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.btn-student { background: #4a332d; } /* Tünd qəhvəyi */
-.btn-teacher { background: #b8860b; } /* Qızılı/Bürünc */
+.btn-student { background: #4a332d; } 
+.btn-teacher { background: #b8860b; } 
 
 .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.3); }
 
