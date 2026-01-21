@@ -1,0 +1,71 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    /* Sənin atdığın o binalı şəkli bura fon edirik */
+    background: url('background.jpg') no-repeat center bottom;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f3e9dc; /* Şəkil yüklənənə qədər görünən rəng */
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Dizaynı */
+.logo-area { display: flex; align-items: center; gap: 15px; margin-bottom: 50px; }
+.symbol { font-size: 50px; color: #3e2723; }
+
+.name-text h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 45px;
+    color: #3e2723;
+    text-transform: uppercase;
+}
+
+.line { height: 1px; background: #b8860b; width: 100%; margin: 5px 0; }
+.name-text p { color: #b8860b; letter-spacing: 5px; font-weight: bold; }
+
+/* Mətnlər */
+.content h2 { font-size: 40px; color: #3e2723; margin-top: 30px; }
+.desc { font-size: 18px; color: #5d4037; margin-bottom: 40px; }
+
+/* Düymələrin Dizaynı (Şəkildəki rənglərlə eyni) */
+.btn-group { display: flex; gap: 20px; }
+
+.btn {
+    padding: 15px 35px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-student { background: #4a332d; } /* Tünd qəhvəyi */
+.btn-teacher { background: #b8860b; } /* Qızılı/Bürünc */
+
+.btn:hover { transform: translateY(-3px); box-shadow: 0 6px 15px rgba(0,0,0,0.3); }
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    color: #3e2723;
+    font-size: 14px;
+    font-weight: bold;
+}
