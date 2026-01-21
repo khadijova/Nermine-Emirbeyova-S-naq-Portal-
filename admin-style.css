@@ -1,0 +1,59 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Segoe UI', sans-serif; background: #fdfaf5; }
+
+.admin-wrapper { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: #3e2723; /* Tünd qəhvəyi */
+    color: white;
+    padding: 20px;
+}
+
+.admin-logo { text-align: center; margin-bottom: 40px; }
+.admin-logo h2 { font-family: 'Cinzel', serif; font-size: 40px; color: #b8860b; }
+
+.sidebar nav ul { list-style: none; }
+.sidebar nav li { margin: 15px 0; }
+.sidebar nav a { 
+    color: #d7ccc8; 
+    text-decoration: none; 
+    font-size: 18px; 
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar nav a:hover, .sidebar nav a.active { 
+    background: #b8860b; 
+    color: white; 
+}
+
+.logout { margin-top: 50px; color: #ffab91 !important; }
+
+/* Main Content */
+.main-content { flex: 1; padding: 30px; }
+
+.top-bar { margin-bottom: 30px; border-bottom: 2px solid #e0e0e0; padding-bottom: 10px; }
+.top-bar h1 { color: #3e2723; }
+
+/* Stats Cards */
+.stats { display: flex; gap: 20px; margin-bottom: 40px; }
+.card { 
+    background: white; 
+    padding: 25px; 
+    border-radius: 10px; 
+    flex: 1; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-top: 4px solid #b8860b;
+}
+.card h3 { color: #5d4037; font-size: 16px; margin-bottom: 10px; }
+.card p { font-size: 28px; font-weight: bold; color: #3e2723; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; }
+th, td { padding: 15px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #5d4037; color: white; }
+tr:hover { background: #f1f1f1; }
