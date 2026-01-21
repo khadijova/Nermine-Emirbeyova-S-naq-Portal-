@@ -1,8 +1,8 @@
-/* Google Fonts - Ana səhifə ilə eyni */
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Marcellus&display=swap');
 
 .main-content {
-    background-color: #fdfaf5; /* Yüngül perqament tonu */
+    background-color: #fdfaf5; 
     padding: 40px;
     font-family: 'EB Garamond', serif;
 }
@@ -133,4 +133,27 @@ input[type="file"] {
     font-style: italic;
     font-size: 16px;
     margin-top: 15px;
+}
+
+/* Başlıqlar üçün xüsusi 'Antik Serif' şrifti */
+.sidebar h2, .name-text h1, .logo-text h1 {
+    font-family: 'Marcellus', serif; /* Roma sütunlarındakı yazılar kimidir */
+    font-weight: 400;
+    color: #D4AF37; /* Qızılı tonu daha parlaq edirik */
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Hərflər arası məsafəni artırırıq ki, nəfəs alsın */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Yüngül kölgə ilə dərinlik veririk */
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Altından zərif bir xətt */
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Admin paneldəki adın altındakı 'Admin' yazısı üçün */
+.sidebar span {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #bdc3c7;
+    opacity: 0.8;
 }
