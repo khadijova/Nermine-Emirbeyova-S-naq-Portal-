@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Marcellus&display=swap');
+
+body {
+    background: #e5dbc1; /* Kağız rəngi fonu */
+    font-family: 'EB Garamond', serif !important;
+    margin: 0;
+    color: #3e2723;
+}
+
+.exam-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.exam-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b8860b;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.exam-info h2 {
+    font-family: 'Marcellus', serif !important;
+    font-size: 24px;
+    color: #5d4037;
+}
+
+.timer-box {
+    background: #3e2723;
+    color: #D4AF37;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: 'Marcellus', serif;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Parchment (Sual Kartı) */
+.parchment {
+    background: #fdfaf5;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 50px rgba(184, 134, 11, 0.1), 0 5px 15px rgba(0,0,0,0.1);
+    border: 1px solid #d2b48c;
+    position: relative;
+    min-height: 400px;
+}
+
+.question-image img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 3px solid #3e2723;
+}
+
+.question-text {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* Variantlar */
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    background: rgba(212, 175, 55, 0.05);
+    padding: 15px;
+    border: 1px solid #d2b48c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option:hover {
+    background: rgba(212, 175, 55, 0.15);
+}
+
+.option input[type="radio"] {
+    display: none; /* Standart dairəni gizlədirik */
+}
+
+.option-letter {
+    background: #3e2723;
+    color: #D4AF37;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-family: 'Marcellus', serif;
+}
+
+/* Seçilmiş variantın rəngi */
+.option input[type="radio"]:checked + .option-letter {
+    background: #b8860b;
+    color: white;
+}
+
+/* Footer Düymələri */
+.exam-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-btn, .finish-btn {
+    padding: 12px 25px;
+    font-family: 'Marcellus', serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.nav-btn { background: #5d4037; color: white; }
+.finish-btn { background: #b8860b; color: white; border-radius: 5px; font-weight: bold; }
+
+.nav-btn:hover, .finish-btn:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
