@@ -1,78 +1,136 @@
-.form-container {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+/* Google Fonts - Ana səhifə ilə eyni */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&family=Marcellus&display=swap');
+
+.main-content {
+    background-color: #fdfaf5; /* Yüngül perqament tonu */
+    padding: 40px;
+    font-family: 'EB Garamond', serif;
 }
 
-.form-group {
-    margin-bottom: 25px;
+.top-bar h1 {
+    font-family: 'Marcellus', serif;
+    color: #3e2723;
+    font-size: 32px;
+    border-bottom: 2px solid #b8860b;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid #d2b48c;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .form-group label {
+    font-family: 'Marcellus', serif;
+    font-size: 18px;
+    color: #5d4037;
+    margin-bottom: 12px;
     display: block;
-    font-weight: 600;
-    color: #3e2723;
-    margin-bottom: 10px;
 }
 
 textarea {
     width: 100%;
-    height: 100px;
+    height: 120px;
     padding: 15px;
-    border: 1px solid #d7ccc8;
-    border-radius: 8px;
-    font-family: inherit;
-    font-size: 16px;
-    resize: none;
+    border: 1px solid #d2b48c;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: #3e2723;
+    transition: 0.3s;
 }
 
-/* Variantlar Düzeni */
+textarea:focus {
+    outline: none;
+    border-color: #b8860b;
+    box-shadow: 0 0 10px rgba(184, 134, 11, 0.1);
+}
+
+/* Şəkil Yükləmə Sahəsi */
+input[type="file"] {
+    background: #efebe9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dashed #b8860b;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Variantlar - Daha Estetik */
 .options-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 25px;
     margin-top: 20px;
 }
 
 .option-item {
     display: flex;
     align-items: center;
-    background: #fdfaf5;
-    padding: 10px;
+    background: white;
+    padding: 15px;
     border-radius: 8px;
-    border: 1px solid #efebe9;
+    border: 1px solid #d2b48c;
+    transition: 0.3s;
+}
+
+.option-item:hover {
+    border-color: #b8860b;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .option-item input[type="text"] {
     flex: 1;
     border: none;
     background: transparent;
-    padding: 10px;
-    font-size: 15px;
+    padding: 5px 10px;
+    font-family: 'EB Garamond', serif;
+    font-size: 18px;
+    color: #3e2723;
     outline: none;
 }
 
 .option-item input[type="radio"] {
+    accent-color: #3e2723; /* Dairənin rəngi tünd qəhvəyi */
     width: 20px;
     height: 20px;
-    margin-right: 10px;
     cursor: pointer;
-    accent-color: #b8860b;
 }
 
+/* Yadda Saxla Düyməsi */
 .save-btn {
     background: #3e2723;
-    color: white;
+    color: #f3e9dc;
+    font-family: 'Marcellus', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 18px 50px;
     border: none;
-    padding: 15px 40px;
-    border-radius: 8px;
-    font-size: 18px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-top: 30px;
-    transition: 0.3s;
+    font-size: 18px;
+    margin-top: 40px;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px rgba(62, 39, 35, 0.3);
 }
 
-.save-btn:hover { background: #b8860b; }
+.save-btn:hover {
+    background: #b8860b;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(184, 134, 11, 0.4);
+}
 
-.hint { font-size: 13px; color: #8d6e63; margin-top: 10px; font-style: italic; }
+.hint {
+    font-family: 'EB Garamond', serif;
+    color: #8d6e63;
+    font-style: italic;
+    font-size: 16px;
+    margin-top: 15px;
+}
